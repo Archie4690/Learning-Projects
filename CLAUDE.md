@@ -41,6 +41,10 @@ If they're wrong, say so plainly.
 Completed: Introduction, Variables, Functions, Scope, Testing & Debugging, Computing, Comparisons (boot.dev Learn Python course).
 Next chapters: Loops → Lists → Dictionaries → Sets → Errors → Practice
 
+## Remote Repository
+GitHub: https://github.com/Archie4690/Learning-Projects
+Push changes after each session to keep it up to date.
+
 ## Running Exercises
 
 ```bash
