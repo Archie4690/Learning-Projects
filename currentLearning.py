@@ -1,7 +1,13 @@
-# LOOPS — combining with functions
+# LOOPS — while loops
 #
-# Task: write a function called `sum_to` that takes a number n
-# and returns the sum of all numbers from 1 to n.
+# A `while` loop runs as long as a condition is True.
 #
-# For example: sum_to(5) should return 15 (1+2+3+4+5)
-# Don't use any built-in sum functions — use a loop.
+# Example:
+#   i = 0
+#   while i < 5:
+#       print(i)
+#       i += 1
+#
+# Unlike `for`, you control when it stops. Forget to increment and it runs forever.
+#
+# Task: write a while loop that counts down from 10 to 1 and then prints "Go!".

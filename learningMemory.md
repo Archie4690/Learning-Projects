@@ -6,6 +6,7 @@
 - Testing & Debugging — assertions, edge cases, hardcoded checks
 - Computing — arithmetic operators, // and % noted as ones to remember
 - Comparisons — comparison operators, returning expressions directly instead of if/else
+- Loops — for loops, range(), while loops introduced, += shorthand, avoid over-nesting calls
 
 ## Learnt (recalled and applied unprompted, without struggle)
 _none yet_
