@@ -1,19 +1,25 @@
-# LISTS — slicing
+# LISTS — sorting
 #
-# You can grab a chunk of a list using a slice: list[start:stop]
-# `start` is inclusive, `stop` is exclusive.
+# Two ways to sort a list:
+#   sorted(list)   — returns a new sorted list, original unchanged
+#   list.sort()    — sorts the list in place, returns None
 #
 # Example:
-#   nums = [10, 20, 30, 40, 50]
-#   print(nums[1:4])   # [20, 30, 40]
-#   print(nums[:2])    # [10, 20]      (start defaults to 0)
-#   print(nums[3:])    # [40, 50]      (stop defaults to end)
+#   nums = [3, 1, 4, 1, 5, 9]
+#   print(sorted(nums))  # [1, 1, 3, 4, 5, 9]
+#   print(nums)          # [3, 1, 4, 1, 5, 9]  — unchanged
+#
+#   nums.sort()
+#   print(nums)          # [1, 1, 3, 4, 5, 9]  — now changed
+#
+# Both accept reverse=True to sort descending:
+#   sorted(nums, reverse=True)
 #
 # Task:
 #   Given this list:
-#     scores = [45, 72, 88, 56, 91, 63, 77]
+#     scores = [54, 23, 87, 12, 66, 91, 38]
 #
-#   Without changing the list, print:
-#   1. The first three scores
-#   2. The last two scores
-#   3. Everything except the first and last score
+#   1. Print the scores sorted ascending, without modifying the original.
+#   2. Print the original list to confirm it's unchanged.
+#   3. Sort the list in place and print it.
+#   4. Print the scores sorted descending.
