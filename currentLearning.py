@@ -1,13 +1,19 @@
-# LOOPS — while loops
+# LISTS — slicing
 #
-# A `while` loop runs as long as a condition is True.
+# You can grab a chunk of a list using a slice: list[start:stop]
+# `start` is inclusive, `stop` is exclusive.
 #
 # Example:
-#   i = 0
-#   while i < 5:
-#       print(i)
-#       i += 1
+#   nums = [10, 20, 30, 40, 50]
+#   print(nums[1:4])   # [20, 30, 40]
+#   print(nums[:2])    # [10, 20]      (start defaults to 0)
+#   print(nums[3:])    # [40, 50]      (stop defaults to end)
 #
-# Unlike `for`, you control when it stops. Forget to increment and it runs forever.
+# Task:
+#   Given this list:
+#     scores = [45, 72, 88, 56, 91, 63, 77]
 #
-# Task: write a while loop that counts down from 10 to 1 and then prints "Go!".
+#   Without changing the list, print:
+#   1. The first three scores
+#   2. The last two scores
+#   3. Everything except the first and last score
