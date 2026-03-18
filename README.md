@@ -1,6 +1,6 @@
 # Python Learning Projects
 
-A record of my Python learning journey, working through the boot.dev Learn Python course with guided sessions.
+A record of my Python learning journey, working through the boot.dev Learn Python course with guided sessions frm Claude
 
 ## Structure
 
