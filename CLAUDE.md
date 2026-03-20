@@ -38,8 +38,8 @@ If they're wrong, say so plainly.
 ## Curriculum Position
 **Update this section whenever the student moves to a new chapter or concept.**
 
-Completed: Introduction, Variables, Functions, Scope, Testing & Debugging, Computing, Comparisons, Loops, Lists, Dictionaries, Sets (boot.dev Learn Python course).
-Next chapters: Errors → Practice
+Completed: Introduction, Variables, Functions, Scope, Testing & Debugging, Computing, Comparisons, Loops, Lists, Dictionaries, Sets, Errors (boot.dev Learn Python course).
+Next chapters: Practice
 
 ## Remote Repository
 GitHub: https://github.com/Archie4690/Learning-Projects

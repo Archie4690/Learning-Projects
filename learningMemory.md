@@ -10,6 +10,7 @@
 - Lists — indexing, slicing (with step), append, modifying/removing (pop/remove), looping, enumerate(), `in` operator, sum/min/max/len, sorting (sorted vs .sort(), reverse=True), list comprehensions (expression + filter)
 - Dictionaries — key-value pairs, access by key, update/add keys, looping (.items()/.keys()/.values()), .get() with fallback, `in` for key checking
 - Sets — unique values, set() vs {}, add/discard, membership with `in`, union (|), intersection (&), difference (-)
+- Errors — try/except, multiple except clauses, EAFP vs LBYL
 
 ## Learnt (recalled and applied unprompted, without struggle)
 _none yet_
@@ -32,3 +33,4 @@ _none yet_
 - Lists — 18.03.26 (complete)
 - Dictionaries — 18.03.26 (complete)
 - Sets — 20.03.26 (complete)
+- Errors — 20.03.26 (complete)
