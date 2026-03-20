@@ -10,7 +10,8 @@
 - Lists — indexing, slicing (with step), append, modifying/removing (pop/remove), looping, enumerate(), `in` operator, sum/min/max/len, sorting (sorted vs .sort(), reverse=True), list comprehensions (expression + filter)
 - Dictionaries — key-value pairs, access by key, update/add keys, looping (.items()/.keys()/.values()), .get() with fallback, `in` for key checking
 - Sets — unique values, set() vs {}, add/discard, membership with `in`, union (|), intersection (&), difference (-)
-- Errors — try/except, multiple except clauses, EAFP vs LBYL
+- Errors — try/except, multiple except clauses, EAFP vs LBYL, recursion-for-retry (noted: while loop preferred for deep retries)
+- List comprehensions — used unprompted in vowel counter project to replace manual loop+counter; understands when to prefer over a loop
 
 ## Learnt (recalled and applied unprompted, without struggle)
 _none yet_

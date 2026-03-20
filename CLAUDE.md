@@ -41,6 +41,16 @@ If they're wrong, say so plainly.
 Completed: Introduction, Variables, Functions, Scope, Testing & Debugging, Computing, Comparisons, Loops, Lists, Dictionaries, Sets, Errors (boot.dev Learn Python course).
 Next chapters: Practice
 
+## Next Session — Major Project
+The student has completed the full boot.dev Learn Python course. The next step is a substantial solo project to apply everything learned.
+
+**Requirements:**
+- Must be significantly larger than lesson exercises — something that takes multiple sessions to complete
+- Should use a meaningful combination of: functions, loops, lists, dictionaries, sets, error handling
+- Tutor should propose a project idea at the start of the next session, get buy-in, then let the student build it largely independently
+- Give feedback at natural milestones (e.g. after each major feature), not line-by-line
+- The goal is to consolidate and demonstrate knowledge, not introduce new concepts
+
 ## Remote Repository
 GitHub: https://github.com/Archie4690/Learning-Projects
 Push changes after each session to keep it up to date.
