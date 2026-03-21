@@ -1,32 +1,115 @@
-# ERRORS — try/except
+# PROJECT: Personal Finance Tracker
 #
-# When code might fail, wrap it in a try/except block:
+# Build a command-line app that lets you track income and expenses.
 #
-#   try:
-#       result = 10 / 0
-#   except ZeroDivisionError:
-#       print("Can't divide by zero")
+# Features to implement:
+#   1. Log a transaction — ask for: type (income/expense), amount, category, description
+#   2. View summary — total income, total expenses, net balance
+#   3. Filter by category — show all transactions in a given category
+#   4. Find the biggest expense
+#   5. Quit
 #
-# The except block only runs if that specific error occurs.
-# If no error — it's skipped entirely.
+# Requirements:
+#   - Use a list to store transactions (each transaction is a dictionary)
+#   - Use a set to track unique categories
+#   - Use functions — one per feature, at minimum
+#   - Handle invalid input (e.g. non-numeric amount) with try/except
+#   - Main loop should present a menu and call the right function
 #
-# Task:
-#   Ask the user to enter a number.
-#   Divide 100 by that number and print the result.
-#   Handle two cases:
-#     - They enter zero (ZeroDivisionError)
-#     - They enter something that isn't a number (ValueError)
-#   Print an appropriate message for each.
+# Build this yourself. Come back when you have a feature working and I'll review it.
+# Start with feature 1 — logging a transaction.
 
-def div100():
-    try:
-        userNum = int(input("What number would you like? "))
-        print(100/userNum)
-    except ValueError:
-        print("Please pick a number")
-        div100()
-    except ZeroDivisionError:
-        print("Don't be a smartass")
-        div100()
+categories = set()
+transactions = []
 
-div100()
+def main():
+    income = 0
+    while True: 
+        user_type = input(f"\nYour balance is {income} \n\nWhat would you like to do? \n(1). Add a transaction\n(2). Summary \n")
+        if user_type in ("1", "transaction"):
+            income += new_transaction(income)
+        elif user_type in ("2", "Summary"):
+            summary(income)
+        else:
+            print("\nPlease enter a valid response.\n ")
+
+
+def summary(balance):
+    print(f"Here is an overview of your account.\nBalance: {balance}")
+    positive = [(p["Category"],p["Amount"]) for p in transactions if p["Type"] == "income"]
+    negative = [(p["Category"],p["Amount"]) for p in transactions if p["Type"] == "expense"]
+    income_sum = sum([i["Amount"] for i in transactions if i["Type"] == "income"])
+    expense_sum = sum([i["Amount"] for i in transactions if i["Type"] == "expense"])
+    print(f"\nYou have the following incomes totalling {income_sum}: ")
+    for i, e in positive:
+        print(f"{i}: {e}")
+    print(f"\nYou have the following expenses totalling {expense_sum}: ")
+    for i, e in negative:
+        print(f"{i}: {e}")
+    move_on = input("\nPress any button to return to main menu\n")
+    return
+
+
+
+def new_transaction(income):
+    trans_type = ask_for_type()
+    amount = ask_for_amount(trans_type)
+    category = category_type()
+    categories.add(category)
+    description = trans_desc()
+    transactions.append(create_dict(trans_type, amount, category, description))
+    return amount
+
+
+def ask_for_type():
+    while True: 
+        print("\nWhat type of transaction was this? \n")
+        user_type = input("(1). Income (2). Expense \n").lower()
+        if user_type in ("1", "income"):
+            return "income"
+        elif user_type in ("2", "expense"):
+            return "expense"
+
+def ask_for_amount(trans_type):
+    while True:
+        try: 
+            if trans_type == "income":
+                amount = int(input(f"\nHow much was the {trans_type}? \n"))
+                print(amount)
+                return amount
+            elif trans_type == "expense":
+                amount = int(input(f"\nHow much was the {trans_type}? \n"))
+                amount = 0-amount
+                print(amount)
+                return amount
+        except ValueError: 
+            print("Please enter a number. ")
+
+def category_type():
+    while True:
+        category = input("\nWhat category is this under? \n")
+        if len(category) >=1:
+            return category
+        else:
+            print("Please enter a category. ")
+
+def trans_desc():
+    while True:
+        description = input("\nPlease set a description for this transaction? \n")
+        if len(description) >=1:
+            return description
+        else:
+            print("Please enter a description. ")
+
+def create_dict(trans_type, amount, category, description):
+    new_dict = {"Type": trans_type, "Amount": amount, "Category": category, "Description": description}
+    print(f"\nYou had a {trans_type} totalling {amount} under the category: {category}\nDescription: {description}\n")
+    return new_dict
+
+
+main()
+
+# TODO
+# Implement full summary, for loop for transactions, dictionary comprehension. 
+# Filter by category
+# find biggest and smallest transactions
