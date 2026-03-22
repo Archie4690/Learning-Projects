@@ -14,7 +14,11 @@
 - List comprehensions — used unprompted in vowel counter project to replace manual loop+counter; understands when to prefer over a loop
 
 ## Learnt (recalled and applied unprompted, without struggle)
-_none yet_
+- List comprehensions — used independently and correctly throughout finance tracker project with no prompting
+- try/except — used correctly for input validation without prompting
+- Dictionaries — constructed and accessed throughout project without struggle
+- Sets — used for category tracking unprompted
+- Functions — decomposed program into single-responsibility functions naturally
 
 ## Weak Spots (revisit these)
 - `pop()` vs `remove()` — missed the index vs value distinction in quiz
@@ -35,3 +39,4 @@ _none yet_
 - Dictionaries — 18.03.26 (complete)
 - Sets — 20.03.26 (complete)
 - Errors — 20.03.26 (complete)
+- Finance Tracker project — 22.03.26 (complete). All 5 features built independently. Strong overall. Weak spot: variable naming errors (user_input vs user_search) and key name typos not caught until runtime.
