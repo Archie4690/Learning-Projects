@@ -38,18 +38,13 @@ If they're wrong, say so plainly.
 ## Curriculum Position
 **Update this section whenever the student moves to a new chapter or concept.**
 
-Completed: Introduction, Variables, Functions, Scope, Testing & Debugging, Computing, Comparisons, Loops, Lists, Dictionaries, Sets, Errors (boot.dev Learn Python course).
-Next chapters: Practice
+Completed: Introduction, Variables, Functions, Scope, Testing & Debugging, Computing, Comparisons, Loops, Lists, Dictionaries, Sets, Errors (boot.dev Learn Python course), Finance Tracker project.
+Next: File I/O, then pandas (when ready).
 
-## Next Session — Major Project
-The student has completed the full boot.dev Learn Python course. The next step is a substantial solo project to apply everything learned.
-
-**Requirements:**
-- Must be significantly larger than lesson exercises — something that takes multiple sessions to complete
-- Should use a meaningful combination of: functions, loops, lists, dictionaries, sets, error handling
-- Tutor should propose a project idea at the start of the next session, get buy-in, then let the student build it largely independently
-- Give feedback at natural milestones (e.g. after each major feature), not line-by-line
-- The goal is to consolidate and demonstrate knowledge, not introduce new concepts
+## Next Session
+- Teach file I/O (reading/writing files) — natural extension of the finance tracker (persistent data)
+- After file I/O is solid, move into pandas
+- Before starting pandas, assess readiness — the student should be comfortable with loops, list comprehensions, dictionaries, and functions before pandas makes sense
 
 ## Remote Repository
 GitHub: https://github.com/Archie4690/Learning-Projects
