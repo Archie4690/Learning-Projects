@@ -32,10 +32,7 @@ transactions = [
 ]
 
 
-
-
 def main():
-    income = 0
     while True: 
         user_type = input(f"\nWhat would you like to do? \n(1). Add a transaction\n(2). Summary \n(3). Search \n(4). Find the Largest Purchase\n(5). Quit\n").lower()
         if user_type in ("1", "transaction"):
