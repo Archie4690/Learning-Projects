@@ -26,7 +26,5 @@ with open ("notes.txt", "a") as note:
     note.write(f"{text}\n")
 
 with open("notes.txt", "r", encoding="utf-8") as f:
-    number = 0
     for line in f:
-        number += 1
-        print(f"{number}. {line}\n")
+        print(line)
